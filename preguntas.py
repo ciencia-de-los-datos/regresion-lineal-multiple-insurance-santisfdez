@@ -21,13 +21,13 @@ def pregunta_01():
     df = pd.read_csv('insurance.csv',sep=',',thousands=None,decimal='.')
 
     # Asigne la columna `charges` a la variable `y`.
-    y = df['charges'].values.reshape(-1,1)
+    y = df['charges'].values
 
     # Asigne una copia del dataframe `df` a la variable `X`.
     X = df.copy()
 
     # Remueva la columna `charges` del DataFrame `X`.
-    X.drop('charges',axis=1)
+    X.drop('charges',inplace=True, axis=1)
 
     # Retorne `X` y `y`
     return X, y
