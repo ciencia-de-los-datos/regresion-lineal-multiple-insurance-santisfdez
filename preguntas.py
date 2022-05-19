@@ -9,7 +9,7 @@ selección de las n variables más relevantes usando una prueba f.
 # pylint: disable=invalid-name
 # pylint: disable=unsubscriptable-object
 
-from statistics import LinearRegression, linear_regression
+
 import pandas as pd
 
 
@@ -158,8 +158,8 @@ def pregunta_04():
     X_train, X_test, y_train, y_test = pregunta_02()
 
     # Evalúe el modelo con los conjuntos de entrenamiento y prueba.
-    y_train_pred = LinearRegression.predict(X_train)
-    y_test_pred = LinearRegression.predict(X_test)
+    y_train_pred = gridSearchCV.predict(X_train)
+    y_test_pred = gridSearchCV.predict(X_test)
 
     # Compute el error cuadratico medio de entrenamiento y prueba. Redondee los
     # valores a dos decimales.
