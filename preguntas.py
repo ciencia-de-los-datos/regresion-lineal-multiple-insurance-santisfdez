@@ -109,7 +109,7 @@ def pregunta_03():
             # Paso 3: Construya un modelo de regresión lineal.
             (
                 "linearRegresion",
-                LinearRegression(fit_intercept=True,normalize=False),
+                LinearRegression(),
             ),
         ],
     )
