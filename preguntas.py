@@ -103,7 +103,7 @@ def pregunta_03():
             (
                 "selectKBest",
                 #____(____=____),
-                SelectkBest(Score_func=f_regression,k='all')
+                SelectKBest(Score_func=f_regression,k='all')
 
             ),
             # Paso 3: Construya un modelo de regresión lineal.
