@@ -77,7 +77,7 @@ def pregunta_03():
     from sklearn.feature_selection import SelectKBest
     from sklearn.feature_selection import f_regression
     from sklearn.linear_model import LinearRegression
-    from model_selection import GridSearchCV
+    from sklearn.model_selection import GridSearchCV
     from sklearn.pipeline import Pipeline
     from sklearn.preprocessing import OneHotEncoder
 
