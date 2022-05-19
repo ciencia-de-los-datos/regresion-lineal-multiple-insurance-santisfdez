@@ -101,8 +101,7 @@ def pregunta_03():
             # Paso 2: Construya un selector de características que seleccione las K
             # características más importantes. Utilice la función f_regression.
             (
-                "selectKBest",
-                #____(____=____),
+                "SelectKBest",
                 SelectKBest(score_func=f_regression)
 
             ),
